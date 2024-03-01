@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darkmode</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
         .container{
             height: 50px;
@@ -40,7 +41,7 @@
             position: absolute;
             margin-left: 4px;
             padding-left: 0%;
-          
+            opacity: 0.6;
             cursor: pointer;
             transition: transform 0.5s ease;
           
@@ -54,7 +55,8 @@
         }
         .darkmode .circle{
            transform: translateX(57px);
-           /* background-color: #FBD009; */
+           background-color: #eed14f;
+           opacity: 0.6;
         }
         body.darkmode{
             background-color: #222;
@@ -74,7 +76,12 @@
 </div>
 <br>
 <br>
-<h1>Click on the Toggle Button</h1>
+<!-- <div data-aos="fade-up"> -->
+    
+    <marquee behavior="alternate" direction="">
+<h1 >Click on the Toggle Button</h1>
+</marquee>
+<!-- </div> -->
 <script>
 
     let toogle=document.querySelector('.container');
@@ -91,5 +98,6 @@
 
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
